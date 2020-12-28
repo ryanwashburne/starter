@@ -1,0 +1,154 @@
+/* purgecss start ignore */
+@tailwind base;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-serif;
+}
+
+html,
+body {
+  @apply bg-white;
+  @apply text-black;
+  @apply font-sans;
+  scroll-behavior: smooth;
+}
+.dark body {
+  @apply text-white;
+  background-color: #4e4e4e;
+}
+.dark main {
+  @apply bg-black;
+  @apply bg-opacity-50;
+}
+
+button:disabled {
+  @apply cursor-not-allowed;
+}
+
+ul,
+ol {
+  @apply list-inside;
+}
+li {
+  @apply mb-2;
+}
+
+nav {
+  background-color: #fbfbfb;
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.dark nav {
+  @apply bg-black;
+  @apply bg-opacity-60;
+}
+
+@tailwind components;
+
+/* Image Icon */
+.img__icon {
+  @apply rounded-2xl;
+  @apply h-12;
+  @apply w-12;
+  @apply object-cover;
+}
+
+/* Input */
+.input {
+  @apply form-input;
+  @apply px-5;
+  @apply py-2;
+  @apply bg-gray-50;
+  @apply placeholder-opacity-25;
+  @apply rounded-2xl;
+  background-color: #f5f5f5;
+}
+.dark .input {
+  @apply bg-white;
+  @apply bg-opacity-10;
+}
+/* Input Error */
+.input__error {
+  @apply text-xs;
+  @apply text-red-500;
+}
+
+/* Text Accent */
+.text-accent {
+  @apply text-black;
+  @apply text-opacity-50;
+}
+.dark .text-accent {
+  @apply text-white;
+  @apply text-opacity-50;
+}
+
+/* Button */
+.btn__base {
+  @apply rounded-2xl;
+  @apply flex;
+  @apply items-center;
+  @apply px-4;
+  @apply py-2;
+}
+.btn {
+  @apply btn__base;
+}
+.btn__hover {
+  background-color: #ededed;
+}
+.dark .btn__hover {
+  @apply bg-white;
+  @apply bg-opacity-10;
+}
+.btn:hover {
+  @apply btn__hover;
+}
+
+/* Button Inverse */
+.btn__inverse {
+  @apply btn__base;
+  @apply bg-black;
+  @apply text-white;
+}
+.dark .btn__inverse {
+  @apply bg-white;
+  @apply text-black;
+}
+.btn__inverse:hover {
+  @apply bg-opacity-80;
+}
+
+/* Button Icon */
+.btn__icon {
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply rounded-full;
+  @apply h-10;
+  @apply w-10;
+  @apply p-1;
+}
+.btn__icon:hover {
+  @apply bg-black;
+  @apply bg-opacity-10;
+}
+.dark .btn__icon:hover {
+  @apply bg-white;
+  @apply bg-opacity-20;
+}
+
+/* Section Header */
+.section__header {
+  @apply uppercase;
+  @apply text-accent;
+  @apply font-bold;
+  @apply text-xs;
+}
+
+/* purgecss end ignore */
+
+@tailwind utilities;
