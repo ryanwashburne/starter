@@ -19,6 +19,12 @@
     "url": "https://github.com/ryanwashburne/start/issues"
   },
   "dependencies": {
+    "@sentry/node": "^5.29.2",
+    "@sentry/tracing": "^5.29.2",
+    "apollo-server-lambda": "^2.19.1",
+    "aws-sdk": "^2.818.0",
+    "graphql-scalars": "^1.7.0",
+    "netlify": "^6.0.7",
     "react": "^17.0.1",
     "react-netlify-identity-widget": "^0.2.7"
   }

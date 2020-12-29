@@ -1,8 +1,8 @@
-const { authorize } = require("./backend");
+const backend = require("./backend");
 const { useAuth, AuthProvider } = require("./frontend");
 
 module.exports = {
-  authorize,
+  ...backend,
   useAuth,
   AuthProvider,
 };
